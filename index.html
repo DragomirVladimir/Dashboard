@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+
+      <h1 class="sr-only">
+        Dashboard
+      </h1>
+
+      <nav class="nav">
+
+        <a class="logo" href="#">
+
+          <img class="logo__img" src="images/logo.svg" alt="Dashboard">
+
+          <span class="app-version">
+            v.01
+          </span>
+
+        </a>
+
+
+        <div class="nav__menu">
+
+          <button class="burger-btn" type="button">
+            <span class="burger-btn__line"></span>
+            <span class="sr-only">Open menu</span>
+          </button>
+
+          <div class="nav__menu-inner">
+
+            <ul class="nav__menu-list">
+
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#icon-key-square"></use>
+                  </svg>
+                  Dashboard
+                </a>
+              </li>
+
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">
+
+                  <svg class="icon icon--3d-square">
+                    <use xlink:href="images/icons/sprite.svg#icon-3d-square"></use>
+                  </svg>
+
+                  Product
+
+                  <svg class="icon icon--arrow">
+                    <use xlink:href="images/icons/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="nav__menu-item">
+                <a class="nav__menu-link nav__menu-link--active" href="#">
+
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#icon-user"></use>
+                  </svg>
+
+                  Customers
+
+                  <svg class="icon icon--arrow">
+                    <use xlink:href="images/icons/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">
+
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#icon-wallet-money"></use>
+                  </svg>
+
+                  Income
+
+                  <svg class="icon icon--arrow">
+                    <use xlink:href="images/icons/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">
+
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#icon-discount-shape"></use>
+                  </svg>
+
+                  Promote
+
+                  <svg class="icon icon--arrow">
+                    <use xlink:href="images/icons/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+
+                </a>
+              </li>
+
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">
+
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#icon-message"></use>
+                  </svg>
+
+                  Help
+
+                  <svg class="icon icon--arrow">
+                    <use xlink:href="images/icons/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="user">
+
+          <img class="user__avatar" src="images/users/user1.png" alt="avatar">
+
+          <div class="user__dscr">
+
+            <div class="user__name">
+              Evano
+            </div>
+
+            <div class="user__job-tite">
+              Project Manager
+            </div>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </header>
+
+    <main class="main">
+
+      <div class="main__inner">
+
+        <h2 class="greeting">
+          Hello Evano 👋🏼,
+        </h2>
+
+        <section class="section dashboard">
+
+          <div class="dashboard__header">
+
+            <div class="dashboard__filters">
+
+              <button class="dashboard__filters-btn dashboard__filters-btn--active" type="button">
+                All Customers
+              </button>
+              <button class="dashboard__filters-btn" type="button">
+                Active Members
+              </button>
+
+            </div>
+
+            <form class="dashboard__search">
+
+              <label class="dashboard__search-label">
+                <input class="dashboard__search-input" type="search" placeholder="Search">
+              </label>
+
+            </form>
+
+          </div>
+
+          <div class="dashboard__wrapper">
+
+            <ul class="dashboard__list">
+
+              <li class="dashboard__item">
+
+                <ul class="customer-info customer-info--titles">
+
+                  <li class="customer-info__item">
+
+                    <p>Customer Name</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Company</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Phone Number</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Email</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Country</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Status</p>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="dashboard__item">
+
+                <ul class="customer-info">
+
+                  <li class="customer-info__item">
+
+                    <a href="#">Jane Cooper</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Microsoft</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="tel:2255550118">(225) 555-0118</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="mailto:jane@microsoft.com">jane@microsoft.com</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>United States</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <span class="status-badge status-badge--active">
+                      Active
+                    </span>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="dashboard__item">
+
+                <ul class="customer-info">
+
+                  <li class="customer-info__item">
+
+                    <a href="#">Floyd Miles</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Yahoo</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="tel:2055550100">(205) 555-0100</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+
+                    <a href="mailto:floyd@yahoo.com">floyd@yahoo.com</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Kiribati</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <span class="status-badge status-badge--inactive">
+                      Inactive
+                    </span>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="dashboard__item">
+
+                <ul class="customer-info">
+
+                  <li class="customer-info__item">
+
+                    <a href="#">Ronald Richards</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Adobe</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="tel:3025550107">(302) 555-0107</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="mailto:ronald@adobe.com">ronald@adobe.com</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Israel</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <span class="status-badge status-badge--inactive">
+                      Inactive
+                    </span>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="dashboard__item">
+
+                <ul class="customer-info">
+
+                  <li class="customer-info__item">
+
+                    <a href="#">Marvin McKinney</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Tesla</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="tel:2525550126">(252) 555-0126</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="mailto:marvin@tesla.com">marvin@tesla.com</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Iran</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <span class="status-badge status-badge--active">
+                      Active
+                    </span>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="dashboard__item">
+
+                <ul class="customer-info">
+
+                  <li class="customer-info__item">
+
+                    <a href="#">Jerome Bell</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Google</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="tel:6295550129">(629) 555-0129</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="mailto:jerome@google.com">jerome@google.com</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Réunion</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <span class="status-badge status-badge--active">
+                      Active
+                    </span>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="dashboard__item">
+
+                <ul class="customer-info">
+
+                  <li class="customer-info__item">
+
+                    <a href="#">Kathryn Murphy</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Microsoft</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="tel:4065550120">(406) 555-0120</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="mailto:kathryn@microsoft.com">kathryn@microsoft.com</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Curaçao</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <span class="status-badge status-badge--active">
+                      Active
+                    </span>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="dashboard__item">
+
+                <ul class="customer-info">
+
+                  <li class="customer-info__item">
+
+                    <a href="#">Jacob Jones</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Yahoo</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="tel:2085550112">(208) 555-0112</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <a href="mailto:jacob@yahoo.com">jacob@yahoo.com</a>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <p>Brazil</p>
+
+                  </li>
+
+                  <li class="customer-info__item">
+
+                    <span class="status-badge status-badge--active">
+                      Active
+                    </span>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="dashboard__footer">
+
+            <div class="dashboard__listinfo">
+              Showing data 1 to 8 of 256K entries
+            </div>
+
+            <div class="dashboard__list-pagination pagination">
+
+              <button class="pagination__btn pagination__btn--prev" type="button">
+                < </button>
+
+                  <ul class="pagination__list">
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn pagination__btn--active" type="button">1</button>
+                    </li>
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">2</button>
+                    </li>
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">3</button>
+                    </li>
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">4</button>
+                    </li>
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">5</button>
+                    </li>
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">6</button>
+                    </li>
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">7</button>
+                    </li>
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">8</button>
+                    </li>
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">9</button>
+                    </li>
+
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">10</button>
+                    </li>
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">11</button>
+                    </li>
+
+                    <li class="pagination__list-item">
+                      <button class="pagination__btn" type="button">12</button>
+                    </li>
+
+                  </ul>
+
+                  <button class="pagination__btn pagination__btn--next" type="button">
+                    >
+                  </button>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </main>
+
+  </div>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/jquery.simplePagination.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+ul.simple-pagination {
+  list-style: none;
+}
+
+.simple-pagination {
+  display: block;
+  overflow: hidden;
+  padding: 0 5px 5px 0;
+  margin: 0;
+}
+
+.simple-pagination ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.light-theme span {
+  cursor: pointer;
+}
+
+.light-theme a,
+.light-theme span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #404B52;
+  font-size: 12px;
+  line-height: 1;
+  border: 1px solid #EEE;
+  background: #F5F5F5;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+
+}
+
+.light-theme a:hover,
+.light-theme li:not(.disabled):not(.active) span:hover {
+  background: #FCFCFC;
+}
+
+.light-theme .current {
+  background: #5932EA;
+  color: #FFF;
+  border-color: #5932EA;
+}

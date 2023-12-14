@@ -1,21 +1,79 @@
 $(function () {
 
-  // const customers = $('.dashboard__item');
 
-  // const customersQnt = customers.length;
+  const items = $('.dashboard__list .dashboard__item').slice(1);
 
-  // const pagesQnt = Math.ceil(customersQnt / 8);
+  const itemsOnPage = 8;
 
+  if (items.length < 1000) {
+
+    $('#list-length').html(items.length);
+
+  } else if (items.length >= 1000) {
+
+    $('#list-length').html(Math.floor(itemsLength / 1000) + 'K');
+
+  }
+
+
+  showPage(1);
 
   $('.pagination').pagination({
-    pages: 40,
-    itemsOnPage: 6,
-    displayedPages: 4,
+    items: items.length,
+    itemsOnPage,
     edges: 1,
     prevText: '<',
     nextText: '>',
+    ellipsePageSet: false,
+    displayedPages: 4,
     cssStyle: 'light-theme',
+
+    onPageClick: function (pageNumber) {
+
+      showPage(pageNumber);
+
+    },
+
+
   });
+
+
+
+  function showPage(pageNumber) {
+
+    items.hide();
+
+    items.removeClass('active-item');
+
+    let start = (pageNumber - 1) * itemsOnPage;
+
+    let end = start + itemsOnPage;
+
+    items.slice(start, end).show();
+
+    items.slice(start, end).addClass('active-item');
+
+    const activeItemIndexs = [];
+
+    items.each((i, el) => {
+
+      if ($(el).hasClass('active-item')) {
+
+        activeItemIndexs.push(i + 1);
+
+      }
+
+    });
+
+
+    $('#first-item').html(activeItemIndexs[0]);
+
+    $('#last-item').html(activeItemIndexs[activeItemIndexs.length - 1]);
+
+
+  }
+
+
 
 
 
